@@ -20,18 +20,31 @@
  There's a vertex between two tables t1 and t2 if we can swap 2 people of t1 to obtain t2.
  
  Algorithm pseudocode :
+
  localSearch(currentTable,bestTable,path) :
+ 
   if we explore too many table
+  
 		return bestTable
+		
 	if currentTable is not visited yet then
+	
 		bestTableYet <- bestTable
+		
 		Add currentTable into path //path is the list of visited state
+		
 		ListOfNeighbors <- some neighbors of currentTable
+		
 		for each neighbor n in ListOfNeighbors
+		
 			add n into path
+			
 			if score(n)score(bestTableYet)
+			
 				bestTableYet = n
+				
 			bestTableYet = localSearch(n,bestTableYet,path)
+			
 	return bestTableYet
   
  Algorithm description:
