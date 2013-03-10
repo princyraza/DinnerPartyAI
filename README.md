@@ -3,7 +3,7 @@
  mail : princy@pdx.edu
 
 
- This is the description of a solution of the dinner party problem .
+ This is the description of a solution of the dinner party problem (https://github.com/princyraza/DinnerPartyAI/blob/master/DinnerPartyProblemDescription.txt).
  The solution as been developed using java and Eclipse Juno. 
  To launch the solution you may build it with an IDE (Eclipse) and run it using your java   virtual machine. 
  To change the input and output files you have to modify the code.
