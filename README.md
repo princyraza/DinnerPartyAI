@@ -24,9 +24,9 @@
 
  localSearch(currentTable,bestTable,path) :
  
-  if we explore too many table
+  	if we explore too many table
   
-	return bestTable
+		return bestTable
 		
 	if currentTable is not visited yet then
 	
