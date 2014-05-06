@@ -26,7 +26,7 @@
  
   if we explore too many table
   
-		return bestTable
+	return bestTable
 		
 	if currentTable is not visited yet then
 	
@@ -53,10 +53,10 @@
  The algorithm begins with a random table. Then we select some children (or neighbors or adjacent tables) of the initial table.
  This is the selection process :
    - pick a random neighbor out of the graph (or landscape)
-   - if this neighbor has a better than score than his parent then select it
+   - if this neighbor has a better score than his parent then select it
    - else we try to select this neighbor with a probability p to be selected
  The last step of the selection process allows the algorithm to explore the landscape. Thus we can reach a better solution by selecting bad tables sometimes.
- I add this step to avoid being stuck in a local maxima.
+ I add this step to avoid beintg stuck in a local maxima.
  After selecting a set of neighbor we recursively call the algorithm for each of them. Of course the best table discovered yet is recorded :
 	 for each neighbor n in ListOfNeighbors
 		if score(n)score(bestTableYet)
