@@ -22,13 +22,14 @@
  Algorithm pseudocode :
 
 
- localSearch(currentTable,bestTable,path) :
+ localSearch(currentTable,bestTable,path) {
  
-  	if we explore too many table
+  	if we explore too many table{
   
 		return bestTable
+	}
 		
-	if currentTable is not visited yet then
+	if currentTable is not visited yet {
 	
 		bestTableYet <- bestTable
 		
@@ -45,9 +46,10 @@
 				bestTableYet = n
 				
 			bestTableYet = localSearch(n,bestTableYet,path)
+	}
 			
 	return bestTableYet
-	
+	}
   
  Algorithm description:
  The algorithm begins with a random table. Then we select some children (or neighbors or adjacent tables) of the initial table.
